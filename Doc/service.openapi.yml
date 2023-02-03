@@ -1,0 +1,216 @@
+openapi: 1.0.0
+info:
+  title: Patient Schedule Service
+  version: 1.0.0
+
+components:
+  parameters:
+    username:
+      name: user name
+      in: path
+      description: The user name
+      schema:
+        type: string
+      required: true
+    testid:
+      name: test ID
+      in: path
+      description: The test indentify number
+      schema:
+        type: string
+      required: true
+    testname:
+      name: test Name
+      in: path
+      description: The test Name
+      schema:
+        type: string
+      required: true
+    userid:
+      name: user id
+      in: path
+      description: The user ID
+      schema:
+        type: string
+      required: true
+    studyModeId:
+      name: studyModeId
+      in: query
+      description: The id of study mode
+      schema:
+        type: number
+        enum:
+          - 0: Study
+          - 1: Training
+          - 2: Proficiency
+          - 3: Sample
+          - 4: ClientUat
+      required: true
+
+  schemas:
+    test:
+      type: object
+      properties:
+        ID:
+          type: string
+          example: "1"
+        Kythuatxetnghiem:
+          type: string
+          example: "Định lượng Glucose máu"
+        Thoigianxetnghiem:
+          type: string
+          example: "5"
+        Thoigiantraketqua:
+          type: string
+          example: "90"
+    schedule:
+      type: object
+      properties:
+        additionalAttr:
+          type: array
+          items:
+            $ref: "#/components/parameters/testid"
+    user:
+      type: "object"
+      description: user profile
+      properties:
+        UserID:
+          type: "string"
+        UserName:
+          type: "string"
+    userschedule:
+      type: object
+      properties:
+        testid:
+          type: string
+          example: "1"
+        userid:
+          type: string
+          example: "1"
+        starttime:
+          type: string
+          example: ""
+        endtime:
+          type: string
+          example: ""
+        testdue:
+          type: string
+          example: ""
+        expried:
+          type: string
+          example: ""
+        valid:
+          type: string
+          example: ""
+
+paths:
+  "/createuser":
+    get:
+      summary: Create new Patient
+      parameters:
+        - $ref: "#/components/parameters/username"
+      responses:
+        "200":
+          description: "When user is created successfully"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/user"
+      tags:
+        - Users
+
+  "/getalltest":
+    get:
+      summary: get all tests data.
+      parameters:
+      responses:
+        "200":
+          description: "List of tests"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/test"
+      tags:
+        - Tests
+
+  "/gettestbyid":
+    get:
+      summary: Get specific test by id.
+      parameters:
+        - $ref: "#/components/parameters/testid"
+      responses:
+        "200":
+          description: "Test info"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/test"                  
+        "404":
+          description: "If test is not found"
+      tags:
+        - Tests
+
+  "/gettestbyname":
+    get:
+      summary: Get specific test by name.
+      parameters:
+        - $ref: "#/components/parameters/testname"
+      responses:
+        "200":
+          description: "Test info"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/test"
+      tags:
+        - Sites
+
+  "/createuserschedule":
+    get:
+      summary: Create user schedule.
+      parameters:
+        - $ref: "#/components/parameters/userid"
+        - $ref: "#/components/schemas/schedule"
+      responses:
+        "200":
+          description: "User Schedules"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/userschedule"
+      tags:
+        - Schedule
+
+  "/getuserschedule":
+    get:
+      summary: Get user schedule.
+      parameters:
+        - $ref: "#/components/parameters/userid"
+        - $ref: "#/components/parameters/testid"
+      responses:
+        "200":
+          description: "User Schedules"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/userschedule"
+      tags:
+        - Schedule
+
+  "/enduserschedule":
+    get:
+      summary: End user schedule
+      parameters:
+        - $ref: "#/components/parameters/userid"
+        - $ref: "#/components/parameters/testid"
+      responses:
+        "200":
+          description: "Success"
+      tags:
+        - HomeBP

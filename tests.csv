@@ -1,0 +1,83 @@
+ID,Kythuatxetnghiem,Thoigianxetnghiem,Thoigiantraketqua
+1,Định lượng Glucose máu,5,90
+2,Định lượng Ure máu,5,90
+3,Định lượng Creatinin máu,5,90
+4,Định lượng Albumin máu,5,90
+5,Định lượng Acid Uric máu,5,90
+6,Định lượng Cholesterol máu,5,90
+7,Định lượng Protein máu,5,90
+8,Định lượng HDL_C máu,5,90
+9,Định lượng Triglycerid máu,5,90
+10,Đo hoạt độ LDH máu,5,90
+11,Đo hoạt độ  ALP máu,5,90
+12,Đo hoạt độ Amylase máu,5,90
+13,Đo hoạt độ GGT máu,5,90
+14,Đo hoạt độ GOT,5,90
+15,Đo hoạt độ GPT,5,90
+16,Điện giải đồ( Na+ K+ Cl-),5,90
+17,Định lượng Fe huyết thanh,5,90
+18,Định lượng CRP máu,5,90
+19,Định lượng NH3 máu,5,90
+20,Định lượng Ethanol máu,5,90
+21,Định lượng Lipid máu,5,90
+22,Định lượng Beta 2 Microglobulin máu,5,90
+23,Định lượng Calci máu,5,90
+24,Đo hoạt độ CK máu,5,90
+25,Định lượng CK-MB máu,5,90
+26,Định lượng IgA máu,5,90
+27,Định lượng IgG máu,5,90
+28,Định lượng  IgE máu,5,90
+29,Định lượng IgM máu,5,90
+30,Định lượng Kappa máu,5,90
+31,Định lượng Lamda máu,5,90
+32,Định lượng IgM máu,5,90
+33,Định lượng Bilirubin trực tiếp máu,5,90
+34,Định lượng Bilirubin toàn phần máu,5,90
+35,Định lượng ASLO máu,5,90
+36,Định lượng RF máu,5,90
+37,Định lượng AFP máu,5,90
+38,Định lượng Anti-HBs máu,5,90
+39,Định lượng Anti-Tg máu,5,90
+40,Định lượng Anti-TPO máu,5,90
+41,Định lượng Beta HCG máu,5,90
+42,Định lượng CA125 máu,5,90
+43,Định lượng CA15-3 máu,5,90
+44,Định lượng CA19-9 máu,5,90
+45,Định lượng CEA máu,5,90
+46,Định lượng Cortisol máu,5,90
+47,Định lượng Cyfra 21-1 máu,5,90
+48,Định lượng Ferritin máu,5,90
+49,Định lượng Free- PSA máu,5,90
+50,Định lượng  Total PSA máu,5,90
+51,Định lượng Free T4 máu,5,90
+52,Định lượng Total T3 máu,5,90
+53,Định lượng TSH máu,5,90
+54,Định lượng HBeAg máu,5,90
+55,HbsAg miễn dịch tự động,5,90
+56,Anti-HCV miễn dịch tự động,5,90
+57,Anti-HIV miễn dịch tự động,5,90
+58,Định lượng Syphilis máu,5,90
+59,Định lượng Pepsinogen máu,5,90
+60,Định lượng PTH máu,5,90
+61,Định lượng SCC máu,5,90
+62,Định lượng Hs Troponin I máu,5,90
+63,Định lượng Pro GRP máu,5,90
+64,Định lượng HbA1c máu,5,90
+65,Tổng phân tích nước tiểu,5,90
+66,Phản ứng Rivalta,5,90
+67,Thời gian thromboplastin hoạt hoá từng phần (APTT),5,90
+68,Thời gian prothrombin (PT: Prothrombin Time) (Các tên khác: TQ; Tỷ lệ Prothrombin) bằng máy tự động,5,90
+69,Nhuộm hồng cầu lưới trên máy tự động,5,90
+70,Tổng phân tích tế bào máu ngoại vi bằng máy đếm laser,5,90
+71,Xét nghiệm số lượng và độ tập trung tiểu cầu (bằng máy đếm laser),5,90
+72,Tìm ký sinh trùng sốt rét trong máu (bằng phương pháp thủ công),5,90
+73,Nội soi tai mũi họng,15,10
+74,Nội soi can thiệp - làm Clo test chẩn đoán nhiễm H.Pylori,30,10
+75,Nội soi đại trực tràng toàn bộ ống mềm có dùng thuốc gây mê,60,10
+76,Điện tim thường,10,10
+77,Đo Chức năng hô hấp,30,10
+78,Siêu âm,30,30
+79,Chụp cắt lớp vi tính,90,10
+80,Chụp Xquang,45,10
+81,Chọc hút tế bào tuyến giáp dưới hướng dẫn siêu âm,15,180
+82,Sinh thiết hạch (hoặc u) duới hướng dẫn siêu âm,45,14400
